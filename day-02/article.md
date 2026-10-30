@@ -1,5 +1,3 @@
-<!-- CONFIRM BEFORE PUBLISHING: the "What I did hands-on today" results below are the expected outcomes. Run the simulator and edit if anything differs. -->
-
 # Day 2/120 – #120DaysOfAWS: Writing a Custom IAM Policy from Scratch
 
 On Day 1 I used an AWS managed policy (`ReadOnlyAccess`). It works, but it's broad. Today I wrote my own policy that allows exactly one thing: reading one S3 bucket and nothing else. That's least privilege in practice.

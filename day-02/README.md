@@ -1,16 +1,27 @@
 # Day 2: Writing a custom IAM policy from scratch
 
-Part of my [#120DaysOfAWS](../README.md) series. **Status: draft, hands-on results to be confirmed.**
+Part of my [#120DaysOfAWS](../README.md) series.
 
 - [article.md](article.md): the write-up
 - [policy-read-demo-bucket.json](policy-read-demo-bucket.json): the custom policy (read one S3 bucket only)
 - [iam-policy-cheatsheet.png](iam-policy-cheatsheet.png): one-page cheat sheet
 - [linkedin-caption.md](linkedin-caption.md): the LinkedIn post
 
-## Hands-on plan
+## Hands-on
 
-1. Create the customer managed policy `ReadDemoBucketOnly` from the JSON above.
-2. Create the group `DemoBucketReaders` and attach only that policy.
-3. In the Policy Simulator, test `s3:GetObject`, `s3:PutObject` and `s3:DeleteObject` on `robin-120days-demo/*`, then `s3:GetObject` on another bucket.
+1. Created the customer managed policy `ReadDemoBucketOnly` from the JSON above.
+2. Created the group `DemoBucketReaders` and attached only that policy.
+3. Tested in the IAM Policy Simulator:
+   - `s3:GetObject` on `robin-120days-demo/*`: Allowed (explicit allow)
+   - `s3:PutObject` and `s3:DeleteObject` on the same bucket: Denied (implicit deny)
+   - `s3:GetObject` on another bucket: Denied (implicit deny)
+
+Test A (demo bucket):
+
+![Test A](test-a-demo-bucket.png)
+
+Test B (another bucket):
+
+![Test B](test-b-other-bucket.png)
 
 ![IAM policy cheat sheet](iam-policy-cheatsheet.png)
