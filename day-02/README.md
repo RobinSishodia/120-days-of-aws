@@ -2,6 +2,8 @@
 
 Part of my [#120DaysOfAWS](../README.md) series.
 
+Published article: https://sishodiarobin.hashnode.dev/day-2-120-120daysofaws-writing-a-custom-iam-policy-from-scratch
+
 - [article.md](article.md): the write-up
 - [policy-read-demo-bucket.json](policy-read-demo-bucket.json): the custom policy (read one S3 bucket only)
 - [iam-policy-cheatsheet.png](iam-policy-cheatsheet.png): one-page cheat sheet

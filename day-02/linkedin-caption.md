@@ -13,7 +13,7 @@ I tested it in the Policy Simulator:
 ✘ GetObject on another bucket → Denied
 
 Full write-up + cheat sheet 👇
-[ARTICLE LINK]
+https://sishodiarobin.hashnode.dev/day-2-120-120daysofaws-writing-a-custom-iam-policy-from-scratch
 
 Tomorrow (Day 3): IAM roles and temporary credentials.
 
